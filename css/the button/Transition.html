@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>button</title>
+	<style type="text/css">
+		/*normal*/
+		*{
+			background: #efefef;
+			font:sans-serif;
+		}
+		button{
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 100px;
+			height: 60px;
+			font: 14px;
+			color: #111;
+			background: #fff;
+			border-radius: 1.5em;
+			border:5px solid #fff;
+			
+		}
+		button:hover{
+			cursor: pointer;
+			background-color: green;
+			color: #fff;
+			border:5px solid #fff;
+			font-size: 24px;
+			width:150px;
+			height: 90px;
+			
+		}
+		/*transition*/
+		button{
+			transition-property: all;
+			transition-duration: 0.5s;
+			transition-timing-function: ease-out;
+		}
+	</style>
+</head>
+<body>
+	<button>Hover me!</button>
+
+</body>
+</html>
