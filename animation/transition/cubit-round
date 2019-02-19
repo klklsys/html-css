@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			background-color: #0bbea0;
+		}
+
+		div{
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%, -50%) rotate(45deg);
+			/*absolute，top，lelft50%后，利用transform，移动自身50% 将元素局中，rotate将正方形旋转*/
+			width: 6em;
+			height: 6em;
+			background-color: #fff;
+			border-radius: 2px;
+			color: #222;
+			font-size: 24px;
+			font: sans-serif;
+			transition: all 0.9s cubic-bezier(.77,-0.7,.7,1.7);
+			/*cubic-bezier(x1,y1,x2,y2) 当y1小于0时，会有回缩的效果*/
+		}
+
+		p{
+			position: relative;
+			text-align: center;
+		}
+
+		.before{
+			opacity: 1;
+			transition: all 2s ease;
+		}
+
+		.after{
+			display: none;
+			opacity: 0;
+			transition: all 0.9s cubic-bezier(.77,-0.7,.7,1.7);
+		}
+
+		div:hover{
+			border-radius: 6em;
+			transform: translate(-50%,-50%) scale(2);
+		}
+
+		div:hover .after{
+			display: block;
+			opacity: 1;
+		}
+
+		div:hover .before{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p class="before">正方形</p>
+		<p class="after">圆形</p>
+	</div>
+	
+
+</body>
+</html>
