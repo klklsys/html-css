@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>back and forth</title>
+	<style type="text/css">
+		body{
+			background-color: #445566;
+		}
+
+		div{
+			animation:backandforth 3s ease-in-out infinite;
+		}
+		/*animation：名字，单次时长，效果，总时长*/
+
+		@keyframes backandforth{
+			0%{
+				transform: translate(-14em);
+			}
+			50%{
+				transform: translate(14em);
+			}
+			100%{
+				transform: translate(-14em);
+			}
+		}
+
+		div{
+			width: 15em;
+			height: 15em;
+			border-radius: 50%;
+			background-color: #fff;
+			position: absolute;
+			top:calc(50% - 3em);
+			left:calc(50% - 3em);
+			/*calc用法？？？？*/
+		}
+
+	</style>
+</head>
+<body>
+	<div></div>
+
+</body>
+</html>
