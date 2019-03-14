@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		practice
+	</title>
+	<style type="text/css">
+		body{
+			background-color: #eee
+		}
+
+		
+		.info{
+			transition: all 0.4s cubic-bezier(0.4, -0.4, 1.5, 1.4)
+		}
+
+		.info p{
+			transition:all 0.3s ease-out;
+		}
+
+		.card{
+			background:#fff url(/Users/zhoujiayi/Downloads/N611-周-早餐/1.jpg);
+			background-size: cover;
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50% ,-50%);
+			box-shadow: 0 0 5em rgba(0,0,0,0.4)
+		}
+
+		.card:hover .info{
+			height: 250px;
+		}
+
+		.card:hover .info p{
+			opacity: 1;
+			transform: translateY(0);
+		}
+
+		.info{
+			background-color: #fff;
+			left:0;
+			right: 0;
+			height: 30px;
+			margin: 0;
+			padding: 30px 20px;
+			position: absolute;
+			bottom: 0;
+			overflow: hidden;
+		}
+		.info p{
+			opacity: 0;
+			transform: translateY(2em);
+		}
+
+
+
+
+
+        /*transitions*/
+
+		/*other style*/
+		
+		/*设置卡片背景图片 ，显示位置，图片阴影，大小宽度*/
+		
+		/*card在hover之后，具体信息的显示高度变化*/
+
+		/*其中内容部分的透明度变为可见，位置在上方*/
+			
+		/*文字部分的属性，高度，背景颜色，padding，具体位置在底部，*/
+		
+		/*文字在hover前不显示，透明度为0，位置在下方*/
+		
+		
+	</style>
+</head>
+<body>
+	<div class="card">
+		<div class="info">
+			<h2>test</h2>
+			<p>this is a test, this is a test, this is a test, this is a test, this is a test, this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,this is a test,</p>
+		</div>
+	</div>
+	
+</body>
+</html>
