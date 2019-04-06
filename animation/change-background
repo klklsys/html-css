@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+      /*animation property*/
+      .box{
+        animation: change-background 4s linear infinite;
+      }
+
+      /*keyframe*/
+      @keyframes change-background {
+        0%{
+          background: blue;
+        }
+        50%{
+          background: orange;
+        }
+        100%{
+          background: green;
+        }
+      }
+
+      pre{
+        line-height: 2;
+      }
+
+      .box{
+        width: 6em;
+        height: 6em;
+        left: 20em;
+        top:6em;
+        position: absolute;
+        background: blue;
+      }
+
+      .highlight{
+        width:12em;
+        height: 1em;
+        background: #efefef;
+        animation: move-highlight 4s linear infinite;
+        position: absolute;
+        top:4em;
+        left:5em;
+      }
+
+      @keyframes move-highlight{
+        100%{
+          top:17em;
+
+        }
+      }
+  </style>
+	
+</head>
+<body>
+	<div class="code">
+		<pre><code>
+			@keyframes change-background{
+			0%{
+			background:blue;
+				}
+			50%{
+			background:green;
+				}
+			100%{
+			background:orange;
+				}
+			}
+			
+		</code></pre>
+	</div>
+	<div class="box"></div>
+	<div class="highlight"></div>
+
+</body>
+</html>
